@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #b3e4e6;
+    color: #3e2b20;
+}
+
+.tarjeta {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    background: rgb(231, 198, 245);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* PRESENTACIÓN */
+
+header {
+    text-align: center;
+}
+
+.logo {
+    font-size: 60px;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 36px;
+}
+
+.eslogan {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.descripcion {
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+
+/* TÍTULOS */
+
+h2 {
+    margin-top: 30px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #000000;
+}
+
+h3 {
+    margin-top: 25px;
+}
+
+
+/* PRODUCTOS */
+
+.producto {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 5px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.producto strong {
+    font-weight: bold;
+}
+
+
+/* MENÚ DEL DÍA */
+
+.menu-dia {
+    margin-top: 15px;
+    padding: 15px;
+    background: #f8f1e9;
+    line-height: 1.6;
+}
+
+/* Estilo del contenedor del acordeón */
+.menu-categoria {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Estilo del título que se puede hacer clic */
+.categoria-titulo {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #333;
+  padding: 12px 15px;
+  cursor: pointer;
+  list-style: none; /* Oculta la flecha por defecto de HTML */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Ocultar la flecha por defecto en navegadores Webkit (Chrome/Safari) */
+.categoria-titulo::-webkit-details-marker {
+  display: none;
+}
+
+/* Agregar una flechita personalizada a la derecha */
+.categoria-titulo::after {
+  content: '▼';
+  font-size: 0.8rem;
+  color: #6456e4;
+  transition: transform 0.2s ease;
+}
+
+/* Girar la flecha cuando el menú se abre */
+details[open] .categoria-titulo::after {
+  transform: rotate(180deg);
+}
+
+/* Estilo de la lista de precios interna */
+.menu-tabla {
+  width: 100%;
+  padding: 0 15px 15px 15px;
+}
+
+.menu-tabla td {
+  padding: 8px 0;
+  border-bottom: 1px dashed #f0f0f0;
+}
+
+.precio {
+  text-align: right;
+  font-weight: bold;
+}
+
+
+/* HORARIO */
+
+.horario {
+    text-align: center;
+}
+
+.aviso {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* CONTACTO */
+
+.contacto {
+    text-align: center;
+}
+
+.boton {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #f0eea3;
+    font-weight: bold; color: #3d2314;
+
+    text-decoration: none;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.boton:hover {
+    opacity: 0.85;
+}
+
+/* PIE DE PAGINA */
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+
+    border-top: 1px solid #ffffff;
+
+    font-size: 16px;
+}
